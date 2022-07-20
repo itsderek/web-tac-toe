@@ -1,0 +1,87 @@
+
+.game-container {
+    background: white;
+    height: 96vh;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.33);
+    display: grid;
+    grid-template-columns: minmax(10px, 3fr) minmax(10px, 1fr); 
+    grid-template-rows: min-content 1fr min-content;
+    gap: 1rem;
+
+    border-radius: 5px;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 20px;
+  }
+
+.page-header {
+    grid-column: 1/-1;
+
+    font: helvetica;
+    text-align: center;
+}
+
+.page-content {
+    grid-column: 1;
+    grid-row: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-options {
+    background-color: rgb(227, 227, 227);
+    grid-column: 2;
+    grid-row: 2;
+
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.page-footer {
+    grid-column: 1;
+    grid-row: 3;
+
+    background-color: rgb(150, 150, 150);
+    border: solid black 0.5rem;
+    border-radius: 5px;
+    padding: 1rem;
+    
+}
+
+.page-reset {
+    grid-column: 2;
+    grid-row: 3;
+
+    padding: 1rem;
+    text-align: center;
+}
+
+.reset-button {
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
+    font: helvetica;
+}
+
+.ttt-grid {
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    border: 5px solid rgb(13, 43, 13);
+    border-radius: 10px;
+
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.square {
+    border: 5px solid rgb(13, 43, 13);
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
